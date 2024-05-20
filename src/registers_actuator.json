@@ -1,0 +1,48 @@
+{
+  "COILS": {
+    "RELAY_1": {
+      "register": 1,
+      "len": 1,
+      "val": 0,
+      "on_set_cb": "set_relay"
+    },
+    "RELAY_2": {
+      "register": 2,
+      "len": 1,
+      "val": 0,
+      "on_set_cb": "set_relay"
+    }
+  },
+  "HREGS": {
+    "MOISTURE_CHANNEL": {
+      "register": 1,
+      "len": 1,
+      "val": 0,
+      "on_set_cb": "set_mux_channel"
+    },
+    "TEMPERATURE": {
+      "register": 2,
+      "len": 1,
+      "val": 50,
+      "on_get_cb": "get_temperature"
+    },
+    "HUMIDITY": {
+      "register": 3,
+      "len": 1,
+      "val": 500,
+      "on_get_cb": "get_humidity"
+    },
+    "PROXIMITY": {
+      "register": 4,
+      "len": 1,
+      "val": 5000,
+      "on_get_cb": "get_proximity"
+    },
+    "MOISTURE": {
+      "register": 5,
+      "len": 1,
+      "val": 50000,
+      "on_get_cb": "get_moisture"
+    }
+  }
+}
